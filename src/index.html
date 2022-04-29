@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./style.css" rel="stylesheet">
 </head>
-<body class="overflow-y-hidden flex text-center font-sans justify-items-center">
-    <main class="flex-auto w-64 p-20 mx-12"> 
+<body class="flex text-center font-sans justify-items-center items-center h-screen">
+    <main class="flex-auto p-20 mx-12 "> 
         <h1 class="text-4xl font-bold text-teal-500 p-8">Sign in</h1>
         <div class="flex justify-center">
             <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="h-4 fill-gray-800"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></div>
@@ -16,24 +16,26 @@
         <div class="m-6 font-light opacity-40">or use your email account</div>
         <div>
             <div class="form">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-4 opacity-50 mx-3"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-4 opacity-40 mx-3"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
                 <input type="email" placeholder="Email" class="bg-slate-100 focus:outline-none">
             </div>
             <div class="form">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-4 opacity-50 mx-3"><path d="M80 192V144C80 64.47 144.5 0 224 0C303.5 0 368 64.47 368 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80zM144 192H304V144C304 99.82 268.2 64 224 64C179.8 64 144 99.82 144 144V192z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-4 opacity-40 mx-3"><path d="M80 192V144C80 64.47 144.5 0 224 0C303.5 0 368 64.47 368 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80zM144 192H304V144C304 99.82 268.2 64 224 64C179.8 64 144 99.82 144 144V192z"/></svg>
                 <input type="password" placeholder="Password" class="bg-slate-100 focus:outline-none">
             </div>
         </div>
-        <div class="m-6 flex flex-col items-center">
+        <div class="m-6 flex flex-col items-center cursor-pointer">
             <div class="my-1">Forgot your password?</div>
             <hr class="bg-gray-300 w-[165px] my-1">
         </div>
-        <button class="bg-teal-500 text-white font-sans py-3 px-16 rounded-full">SIGN IN</button>
+        <button class="bg-teal-500 text-white font-sans py-3 px-16 rounded-full transiton duration-300 hover:bg-teal-400 active:scale-110">SIGN IN</button>
     </main>
-    <section class="flex-auto w-32 bg-teal-500">
-        <h1>Hello</h1>
-        <p>Enter your personal details and start journey with us</p>
-        <button>Sign up</button>
+    <section class="flex-auto bg-teal-500 items-center p-10 h-full flex content-center 2xl:hidden">
+        <div class="w-full">
+            <h1 class="text-4xl font-bold text-white p-8 my-auto">Hello, Friend!</h1>
+            <p class="text-white opacity-70">Enter your personal details and start journey with us</p>
+            <button class="bg-teal-500 text-white font-sans py-3 px-16 my-8 border border-white rounded-full transiton duration-300 hover:bg-white hover:text-teal-500 active:scale-110">SIGN UP</button>
+        </div>
     </section>
 </body>
 </html>

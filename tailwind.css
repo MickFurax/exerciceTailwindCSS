@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .icon {
-    @apply flex w-10 h-10 items-center justify-center mx-1 bg-white rounded-full border border-gray-300;
+    @apply flex w-10 h-10 items-center justify-center mx-1 bg-white rounded-full border border-gray-300 cursor-pointer;
 }
 
 .form {
