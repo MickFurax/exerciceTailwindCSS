@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+    @apply h-full;
+}
+
 .icon {
     @apply flex w-10 h-10 items-center justify-center mx-1 bg-white rounded-full border border-gray-300 cursor-pointer;
 }
 
 .form {
-    @apply flex items-center bg-slate-100 p-3 m-3 mx-24 rounded-sm;
+    @apply flex items-center bg-slate-100 p-3 m-3 w-96 rounded-sm;
 }

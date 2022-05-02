@@ -501,16 +501,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-4 {
-  height: 1rem;
+.hidden {
+  display: none;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .w-\[165px\] {
@@ -642,12 +642,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.7;
 }
 
-.duration-100 {
-  transition-duration: 100ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
+}
+
+html, body {
+  height: 100%;
 }
 
 .icon {
@@ -669,19 +669,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .form {
   margin: 0.75rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
   display: flex;
+  width: 24rem;
   align-items: center;
   border-radius: 0.125rem;
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
   padding: 0.75rem;
-}
-
-.hover\:bg-teal-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 246 228 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-teal-400:hover {
@@ -710,42 +704,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.active\:scale-125:active {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.active\:bg-teal-500:active {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
-}
-
-.active\:text-white:active {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-@media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:hidden {
-    display: none;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:hidden {
-    display: none;
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:hidden {
-    display: none;
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
   }
 }
