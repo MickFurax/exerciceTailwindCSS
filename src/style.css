@@ -525,6 +525,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex: 1 1 auto;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
